@@ -1,0 +1,323 @@
+object Form1: TForm1
+  Left = 581
+  Height = 359
+  Top = 226
+  Width = 277
+  Caption = 'Калькулятор'
+  ClientHeight = 359
+  ClientWidth = 277
+  Color = clCream
+  OnCreate = FormCreate
+  OnResize = FormResize
+  LCLVersion = '2.2.0.4'
+  object ButtonSum: TButton
+    Left = 208
+    Height = 45
+    Top = 80
+    Width = 56
+    Caption = '+'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonSumClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object ButtonMinus: TButton
+    Left = 208
+    Height = 45
+    Top = 136
+    Width = 56
+    Caption = '-'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonMinusClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object ButtonMult: TButton
+    Left = 208
+    Height = 45
+    Top = 192
+    Width = 56
+    Caption = '*'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonMultClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object ButtonDiv: TButton
+    Left = 208
+    Height = 45
+    Top = 248
+    Width = 56
+    Caption = '/'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonDivClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Button16: TButton
+    Left = 144
+    Height = 45
+    Top = 80
+    Width = 56
+    Caption = 'С'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button16Click
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Button18: TButton
+    Left = 208
+    Height = 45
+    Top = 304
+    Width = 56
+    Caption = '√'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Button18Click
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Button19: TButton
+    Left = 16
+    Height = 45
+    Top = 80
+    Width = 120
+    Caption = '↰'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button19Click
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Button20: TButton
+    Left = 16
+    Height = 45
+    Top = 248
+    Width = 56
+    Caption = '1'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button20Click
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Button21: TButton
+    Left = 80
+    Height = 45
+    Top = 248
+    Width = 56
+    Caption = '2'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button21Click
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Button22: TButton
+    Left = 144
+    Height = 45
+    Top = 248
+    Width = 56
+    Caption = '3'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button22Click
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Button23: TButton
+    Left = 16
+    Height = 45
+    Top = 192
+    Width = 56
+    Caption = '4'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button23Click
+    ParentFont = False
+    TabOrder = 10
+  end
+  object Button24: TButton
+    Left = 80
+    Height = 45
+    Top = 192
+    Width = 56
+    Caption = '5'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button24Click
+    ParentFont = False
+    TabOrder = 11
+  end
+  object Button25: TButton
+    Left = 144
+    Height = 45
+    Top = 192
+    Width = 56
+    Caption = '6'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button25Click
+    ParentFont = False
+    TabOrder = 12
+  end
+  object Button26: TButton
+    Left = 16
+    Height = 45
+    Top = 136
+    Width = 56
+    Caption = '7'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button26Click
+    ParentFont = False
+    TabOrder = 13
+  end
+  object Button27: TButton
+    Left = 80
+    Height = 45
+    Top = 136
+    Width = 56
+    Caption = '8'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button27Click
+    ParentFont = False
+    TabOrder = 14
+  end
+  object Button28: TButton
+    Left = 144
+    Height = 45
+    Top = 136
+    Width = 56
+    Caption = '9'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button28Click
+    ParentFont = False
+    TabOrder = 15
+  end
+  object Button29: TButton
+    Left = 80
+    Height = 45
+    Top = 304
+    Width = 56
+    Caption = '0'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button29Click
+    ParentFont = False
+    TabOrder = 16
+  end
+  object Button31: TButton
+    Left = 144
+    Height = 45
+    Top = 304
+    Width = 56
+    Caption = '='
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button31Click
+    ParentFont = False
+    TabOrder = 17
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 43
+    Top = 8
+    Width = 250
+    Alignment = taRightJustify
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -29
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Edit1Change
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 18
+  end
+end

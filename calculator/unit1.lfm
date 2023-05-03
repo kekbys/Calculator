@@ -1,0 +1,323 @@
+object CALCULATION: TCALCULATION
+  Left = 391
+  Height = 345
+  Top = 304
+  Width = 277
+  Caption = 'Калькулятор'
+  ClientHeight = 345
+  ClientWidth = 277
+  Color = clCream
+  OnCreate = FormCreate
+  OnResize = FormResize
+  LCLVersion = '2.0.12.0'
+  object PLUS: TButton
+    Left = 208
+    Height = 45
+    Top = 80
+    Width = 56
+    Caption = '+'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = PLUSClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object MINUS: TButton
+    Left = 208
+    Height = 45
+    Top = 136
+    Width = 56
+    Caption = '-'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = MINUSClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object UMN: TButton
+    Left = 208
+    Height = 45
+    Top = 192
+    Width = 56
+    Caption = '*'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = UMNClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object DELEN: TButton
+    Left = 208
+    Height = 45
+    Top = 248
+    Width = 56
+    Caption = '/'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = DELENClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object CLEAR: TButton
+    Left = 144
+    Height = 45
+    Top = 80
+    Width = 56
+    Caption = 'С'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = CLEARClick
+    ParentFont = False
+    TabOrder = 4
+  end
+  object KOREN: TButton
+    Left = 208
+    Height = 45
+    Top = 304
+    Width = 56
+    Caption = '√'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -21
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = KORENClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Delete1element: TButton
+    Left = 16
+    Height = 45
+    Top = 80
+    Width = 120
+    Caption = '↰'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Delete1elementClick
+    ParentFont = False
+    TabOrder = 6
+  end
+  object KHOPKA1: TButton
+    Left = 16
+    Height = 45
+    Top = 248
+    Width = 56
+    Caption = '1'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = KHOPKA1Click
+    ParentFont = False
+    TabOrder = 7
+  end
+  object KHOPKA2: TButton
+    Left = 80
+    Height = 45
+    Top = 248
+    Width = 56
+    Caption = '2'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = KHOPKA2Click
+    ParentFont = False
+    TabOrder = 8
+  end
+  object KHOPKA3: TButton
+    Left = 144
+    Height = 45
+    Top = 248
+    Width = 56
+    Caption = '3'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = KHOPKA3Click
+    ParentFont = False
+    TabOrder = 9
+  end
+  object KHOPKA4: TButton
+    Left = 16
+    Height = 45
+    Top = 192
+    Width = 56
+    Caption = '4'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = KHOPKA4Click
+    ParentFont = False
+    TabOrder = 10
+  end
+  object KHOPKA5: TButton
+    Left = 80
+    Height = 45
+    Top = 192
+    Width = 56
+    Caption = '5'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = KHOPKA5Click
+    ParentFont = False
+    TabOrder = 11
+  end
+  object KHOPKA6: TButton
+    Left = 144
+    Height = 45
+    Top = 192
+    Width = 56
+    Caption = '6'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = KHOPKA6Click
+    ParentFont = False
+    TabOrder = 12
+  end
+  object KHOPKA7: TButton
+    Left = 16
+    Height = 45
+    Top = 136
+    Width = 56
+    Caption = '7'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = KHOPKA7Click
+    ParentFont = False
+    TabOrder = 13
+  end
+  object KHOPKA8: TButton
+    Left = 80
+    Height = 45
+    Top = 136
+    Width = 56
+    Caption = '8'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = KHOPKA8Click
+    ParentFont = False
+    TabOrder = 14
+  end
+  object KHOPKA9: TButton
+    Left = 144
+    Height = 45
+    Top = 136
+    Width = 56
+    Caption = '9'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = KHOPKA9Click
+    ParentFont = False
+    TabOrder = 15
+  end
+  object Button29: TButton
+    Left = 80
+    Height = 45
+    Top = 304
+    Width = 56
+    Caption = '0'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = Button29Click
+    ParentFont = False
+    TabOrder = 16
+  end
+  object RAVNO: TButton
+    Left = 144
+    Height = 45
+    Top = 304
+    Width = 56
+    Caption = '='
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -24
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    OnClick = RAVNOClick
+    ParentFont = False
+    TabOrder = 17
+  end
+  object GLAV_EKRAN: TEdit
+    Left = 16
+    Height = 43
+    Top = 8
+    Width = 250
+    Alignment = taRightJustify
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -29
+    Font.Name = 'MS Reference Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = GLAV_EKRANChange
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 18
+  end
+end
